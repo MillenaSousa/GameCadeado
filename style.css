@@ -13,7 +13,7 @@ section {
     background-color: #beb7b796;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 400px;
     height: auto;
     margin: auto;
     box-shadow: 3px 3px 10px #0000005b;
@@ -32,12 +32,9 @@ img {
 
 }
 
-#senha {
-    position: absolute;
-    left: 90vh;
-    top: 155px;
-    color: #fff;
-    font-size: 90px;
+#tent{
+    color: rgb(32, 32, 32);
+    font-size: 20px;
 }
 
 #btn {
@@ -49,14 +46,13 @@ img {
 
 }
 
-#btn2 {
+#btn1 {
     background-color: rgba(124, 141, 85, 0.493);
     border-radius: 5px;
     height: 30px;
-    width: auto;
-    margin: auto;
-    position: absolute;
-    right: 128vh;
+    width: 100px;
+    margin-top: 10px;
+
 
 }
 
@@ -68,33 +64,11 @@ img {
     text-align: center;
 }
 
-#regras {
-    background-color: #ffffff3b;
-    border-radius: 10px;
-    padding: 7px;
-    height: auto;
-    width: auto;
-    position: absolute;
-    top: 13.5vh;
-    right: 140vh;
-}
 
 #regras p {
     font-size: 12pt;
-    text-align: left;
+    text-align: center;
 }
-
-#tent {
-    background-color: #ffffff3b;
-    border-radius: 10px;
-    padding: 7px;
-    width: 50vh;
-    height: auto;
-    position: absolute;
-    top: 13.5vh;
-    right: 14.5vh;
-}
-
 
 
 #valores div {
