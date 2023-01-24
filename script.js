@@ -149,10 +149,10 @@ function refresh() {
 
 function limpar() {
 
-    digito1.value = '0'
-    digito2.value = '0'
-    digito3.value = '0'
-    digito4.value = '0'
+    digito1.value = ''
+    digito2.value = ''
+    digito3.value = ''
+    digito4.value = ''
 
     valor1.value += ' '
     valor2.value += ' '
