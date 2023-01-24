@@ -128,7 +128,7 @@ function tentativas() {
 
         if (senhaCorreta[0] == senha[0] && senhaCorreta[1] == senha[1] && senhaCorreta[2] == senha[2] && senhaCorreta[3] == senha[3]) {
             img.src = "img/cadeado_aberto.png"
-            return novam()
+             setTimeout(() => { return novam() }, 1000);
         }
 
     }
