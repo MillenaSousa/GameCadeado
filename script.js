@@ -1,9 +1,12 @@
+// codigo final
+
 var res = document.getElementById('res')
 var img = document.getElementById('img')
 var valor1 = document.getElementById('va1')
 var valor2 = document.getElementById('va2')
 var valor3 = document.getElementById('va3')
 var valor4 = document.getElementById('va4')
+
 var tent = document.getElementById('tent')
 var cont = 0
 
@@ -13,8 +16,6 @@ var digito1 = document.getElementById('digito1')
 var digito2 = document.getElementById('digito2')
 var digito3 = document.getElementById('digito3')
 var digito4 = document.getElementById('digito4')
-
-// dados do jogador
 
 var senhaCorreta = []
 var senha = []
@@ -29,10 +30,6 @@ function criarSenha() {
             senhaCorreta.push(valor)
         }
     }
-
-
-
-
     return
 }
 
@@ -42,12 +39,8 @@ function mostrar() {
     valor2.innerHTML = Number(digito2.value)
     valor3.innerHTML = Number(digito3.value)
     valor4.innerHTML = Number(digito4.value)
-
-
     return
 }
-
-
 
 function adicionar() {
     if (Number(digito1.value) >= 0 && Number(digito1.value) <= 9 && Number(digito2.value) >= 0 && Number(digito2.value) <= 9
@@ -59,13 +52,11 @@ function adicionar() {
         cont += 1
         mostrar()
     } else {
-        alert('Erro numero invalido!')
+        alert('[ERRO] número invalido!')
         // location.reload()
     }
     return
 }
-
-
 
 function conferirDigitos() {
     // digito 1
@@ -122,14 +113,24 @@ function conferirDigitos() {
     return
 }
 
+function novam() {
+
+    if (confirm("Jogar novamente? ") == true) {
+
+        return refresh()
+    }
+    return
+}
+
 function tentativas() {
 
     function verificar() {
 
         if (senhaCorreta[0] == senha[0] && senhaCorreta[1] == senha[1] && senhaCorreta[2] == senha[2] && senhaCorreta[3] == senha[3]) {
             img.src = "img/cadeado_aberto.png"
+            return novam()
         }
-        return
+
     }
 
 
@@ -138,10 +139,7 @@ function tentativas() {
     return verificar()
 }
 
-function ranking() {
-    var ranking = cont
-    return
-}
+
 function refresh() {
 
     window.location.reload(true);
@@ -164,15 +162,14 @@ function limpar() {
 
 function enviar() {
     console.log(`Senha gerada : ${senhaCorreta}`)
+
     criarSenha()
     adicionar()
+    tentativas()
     limpar()
     conferirDigitos()
-    ranking()
-    tentativas()
-
 
     senha = []
-
 }
+
 
