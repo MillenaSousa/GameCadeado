@@ -115,7 +115,7 @@ function conferirDigitos() {
 
 function novam() {
 
-    if (confirm("Jogar novamente? ") == true) {
+    if (confirm("PARABÉNS VOCÊ CONSEGUIU!Deseja jogar novamente? ") == true) {
 
         return refresh()
     }
