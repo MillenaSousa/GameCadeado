@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>cadeado</title>
+</head>
+
+<body onload="criarSenha()">
+    <header>
+        <h1>Descubra a senha do cadeado</h1>
+    </header>
+    <section>
+        <button id="btn2" onclick="refresh()">Reiniciar</button>
+        
+        <div id="cadeado">
+            <img id="img" src="img/cadeado_fechado.png" alt="">
+        </div>
+        <div id="regras">
+            <h2>Regras/dicas</h2>
+            <p>1-Números de 0 a 9</p>
+            <p>2-Não sera gerado números repetidos</p>
+            <p>3-Números vermelhos não estão na combinação</p>
+            <p>4-Números amarelos estão no lugar incorreto da combinação</p>
+            <p>5-Números verdes estão no lugar correto da combinação</p>
+        </div>
+        <div id="tent">
+            <h2>Suas tentativas</h2>
+
+        </div>
+        <div id="res">
+            <div id="digitos">
+                <input type="number" id="digito1" value="0">
+                <input type="number" id="digito2" value="0">
+                <input type="number" id="digito3" value="0">
+                <input type="number" id="digito4" value="0">
+            </div>
+
+            <br>
+            <button id="btn" onclick="enviar()">Enviar</button>
+        </div>
+        <div id="valores">
+            <div id="va1" class="box"></div>
+            <div id="va2" class="box"></div>
+            <div id="va3" class="box"></div>
+            <div id="va4" class="box"></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; MillenaSousa</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

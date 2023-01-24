@@ -1,0 +1,114 @@
+body {
+    background-color: #497577be;
+    font: normal 15pt Arial;
+    text-align: center;
+}
+
+header {
+    color: #ffffff;
+    text-align: center;
+}
+
+section {
+    background-color: #beb7b796;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    box-shadow: 3px 3px 10px #0000005b;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    font-size: italic;
+}
+
+
+img {
+    width: 200px;
+    margin-bottom: 15px;
+
+}
+
+#senha {
+    position: absolute;
+    left: 90vh;
+    top: 155px;
+    color: #fff;
+    font-size: 90px;
+}
+
+#btn {
+    background-color: rgba(72, 72, 72, 0.755);
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    margin: auto;
+
+}
+
+#btn2 {
+    background-color: rgba(124, 141, 85, 0.493);
+    border-radius: 5px;
+    height: 30px;
+    width: auto;
+    margin: auto;
+    position: absolute;
+    right: 128vh;
+
+}
+
+#digitos input {
+    margin-top: 15px;
+    width: 70px;
+    height: 80px;
+    font-size: 80px;
+    text-align: center;
+}
+
+#regras {
+    background-color: #ffffff3b;
+    border-radius: 10px;
+    padding: 7px;
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 13.5vh;
+    right: 140vh;
+}
+
+#regras p {
+    font-size: 12pt;
+    text-align: left;
+}
+
+#tent {
+    background-color: #ffffff3b;
+    border-radius: 10px;
+    padding: 7px;
+    width: 50vh;
+    height: auto;
+    position: absolute;
+    top: 13.5vh;
+    right: 14.5vh;
+}
+
+
+
+#valores div {
+    margin-top: 15px;
+    width: 50px;
+    height: 60px;
+    font-size: 60px;
+    text-align: center;
+}
+
+#valores {
+    display: flex;
+}
+
+.box {
+    margin: auto;
+}
